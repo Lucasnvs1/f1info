@@ -233,7 +233,7 @@ document.getElementById('btn-standings').addEventListener('click', function () {
     const equipeClasse = p.equipe.toLowerCase().replace(/\s/g, "-");
     const destaqueLider = p.pos === 1 ? "lider" : "";
 
-    content.innerHTML += `
+   content.innerHTML += `
       <div class="race-card ${equipeClasse} ${destaqueLider}">
         <strong>${p.pos} – ${p.nome}</strong><br>
          Equipe: ${p.equipe}<br>
@@ -265,11 +265,18 @@ document.getElementById('btn-constructors').addEventListener('click', function (
     const equipeClasse = c.equipe.toLowerCase().replace(/\s/g, "-");
     const destaqueLider = c.pos === 1 ? "lider" : "";
 
-    content.innerHTML += `
-      <div class="race-card ${equipeClasse} ${destaqueLider}">
-        <strong>${c.pos} – ${c.equipe}</strong><br>
-         Pontos: ${c.pontos}
-      </div>
-    `;
+  content.innerHTML += `
+  <div class="race-card ${equipeClasse}">
+    <strong>${c.pos} – <span class="equipe-nome">${c.equipe}</span></strong><br>
+    Pontos: ${c.pontos}
+  </div>
+`;
+
+
   });
 });
+
+function iniciarSite() {
+  document.getElementById('intro').style.display = 'none';
+  document.getElementById('site').style.display = 'block';
+}

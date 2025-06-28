@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <title>F1 Info</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  
   <header>
     <img src="images/logof1.png" alt="Logo F1" class="logo-f1">
-  <h1>Informações</h1>
-    
+    <h1>INFORMAÇÕES</h1>
     <nav>
       <button id="btn-standings">Classificação</button>
       <button id="btn-constructors">Construtores</button>
@@ -21,30 +21,16 @@
     </nav>
   </header>
 
- 
-  <section class="hero-video" id="hero-video">
-  <video autoplay muted loop playsinline id="video-bg">
-    <source src="video/fundo.mp4" type="video/mp4">
-    Seu navegador não suporta vídeo HTML5.
-  </video>
-
-  <div class="hero-content">
-    <h2>Bem-vindo ao <span class="destaque">F1 Info</span></h2>
-    <p>Acompanhe o calendário, classificação e os destaques da temporada 2025 da Fórmula 1.</p>
-    <button onclick="document.getElementById('btn-calendar').click()">Ver GPs de 2025</button>
-  </div>
-</section>
-
-
-
+  
   <main id="content">
-    <p>Bem-vindo! Clique no botão acima para ver os GPs de 2025.</p>
-
+    <section class="boas-vindas">
+      <h2>Bem-vindo ao <span class="destaque">F1 Info</span></h2>
+      <p>Acompanhe o calendário e as classificações da temporada 2025 da Fórmula 1.</p>
+      <p>Clique em um dos botões acima para começar!</p>
+    </section>
   </main>
 
   <script src="script.js"></script>
 </body>
-
-
 
 </html>
