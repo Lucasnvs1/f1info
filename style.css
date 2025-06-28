@@ -1,0 +1,280 @@
+/* === Fonte moderna === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #eee;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(62, 61, 61, 0.7);
+  z-index: -1;
+}
+
+/* === Cabeçalho === */
+header {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header img.logo-f1 {
+  height: 100px;
+  width: auto;
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: rgb(1, 1, 1);
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+}
+
+
+/* === Navegação === */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  background: #ffffff;
+}
+
+nav button {
+  background: linear-gradient(135deg, #4c4a4a, #797575);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+nav button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #4c4a4a, #797575);
+}
+
+/* === Conteúdo === */
+#content {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* === Hero === */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: url('https://cdn.ferrari.com/cms/network/media/img/resize/662b9d86e847e30212c3b6b0-f1-sf-24-carousel-desktop?width=1920') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #423811;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+  max-width: 600px;
+  margin: auto;
+}
+
+.f1-logo {
+  width: 180px;
+  margin-top: 20px;
+  opacity: 0.95;
+}
+
+/* === Cards === */
+.race-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-left: 5px solid #ff0000;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  transition: 0.3s;
+}
+
+.race-card:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lider {
+  border-left-color: gold;
+  background: rgba(255, 215, 0, 0.05);
+}
+
+/* === Equipes com cores === */
+.red-bull { border-left-color: #1e41ff; }
+.ferrari { border-left-color: #ff0000; }
+.mclaren { border-left-color: #ff8700; }
+.mercedes { border-left-color: #00d2be; }
+.williams { border-left-color: #005aff; }
+.racing-bulls { border-left-color: #8000ff; }
+.hass, .haas { border-left-color: #bcbcbc; }
+.alpine { border-left-color: #0090d0; }
+.sauber { border-left-color: #00b894; }
+.aston-martin { border-left-color: #006f62; }
+
+/* === Títulos === */
+.titulo-classificacao {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #ffcb05;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* === Responsivo === */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .f1-logo {
+    width: 140px;
+  }
+
+  .race-card {
+    font-size: 0.95rem;
+    padding: 15px;
+  }
+
+  .titulo-classificacao {
+    font-size: 1.4rem;
+  }
+}
+
+/* === Calendario === */
+.calendar-card {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-left: 5px solid #ff0000;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.calendar-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+.flag img.bandeira {
+  width: 36px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+.info h3 {
+  margin: 0;
+  color: #ffcb05;
+}
+
+.info p {
+  margin: 4px 0;
+  color: #ccc;
+}
+ /* === video === */
+ .hero-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.4);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content .destaque {
+  color: #ffcb05;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  background: #d00;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-content button:hover {
+  background: #ff0000;
+  transform: scale(1.05);
+}
