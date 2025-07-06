@@ -207,22 +207,22 @@ document.getElementById('btn-standings').addEventListener('click', function () {
 
 
   const pilotos = [
-    { pos: 1 , nome: "Oscar Piastri", equipe: "McLaren", pontos: 216 },
-    { pos: 2, nome: "Lando Norris", equipe: "McLaren", pontos: 201 },
-    { pos: 3, nome: "Max Verstappen", equipe: "Red Bull", pontos: 155 },
-    { pos: 4, nome: "George Russell", equipe: "Mercedes", pontos: 146 },
+    { pos: 1 , nome: "Oscar Piastri", equipe: "McLaren", pontos: 234 },
+    { pos: 2, nome: "Lando Norris", equipe: "McLaren", pontos: 226 },
+    { pos: 3, nome: "Max Verstappen", equipe: "Red Bull", pontos: 165 },
+    { pos: 4, nome: "George Russell", equipe: "Mercedes", pontos: 147 },
     { pos: 5, nome: "Charles Leclerc", equipe: "Ferrari", pontos: 119 },
-    { pos: 6, nome: "Lewis Hamilton", equipe: "Ferrari", pontos: 91 },
+    { pos: 6, nome: "Lewis Hamilton", equipe: "Ferrari", pontos: 103 },
     { pos: 7, nome: "Kimi Antonelli", equipe: "Mercedes", pontos: 63 },
-    { pos: 8, nome: "Alexander Albon", equipe: "Williams", pontos: 42 },
-    { pos: 9, nome: "Esteban Ocon", equipe: "Haas", pontos: 23 },
-    { pos: 10, nome: "Nico Hülkenberg", equipe: "Sauber", pontos: 22 },
+    { pos: 8, nome: "Alexander Albon", equipe: "Williams", pontos: 46 },
+    { pos: 9, nome: "Nico Hülkenberg", equipe: "Sauber", pontos: 37 },
+    { pos: 10, nome: "Esteban Ocon", equipe: "Haas", pontos: 23 }, 
     { pos: 11, nome: "Isack Hadjar", equipe: "Racing Bulls", pontos: 21 },
-    { pos: 12, nome: "Lance Stroll", equipe: "Aston Martin", pontos: 14 },
-    { pos: 13, nome: "Fernando Alonso", equipe: "Aston Martin", pontos: 14 },
-    { pos: 14, nome: "Carlos Sainz", equipe: "Williams", pontos: 13 },
-    { pos: 15, nome: "Liam Lawson", equipe: "Racing Bulls", pontos: 12 },
-    { pos: 16, nome: "Pierre Gasly", equipe: "Alpine", pontos: 11 },
+    { pos: 12, nome: "Lance Stroll", equipe: "Aston Martin", pontos: 20 },
+    { pos: 13, nome: "Pierre Gasly", equipe: "Alpine", pontos: 19 },
+    { pos: 14, nome: "Fernando Alonso", equipe: "Aston Martin", pontos: 16 },
+    { pos: 15, nome: "Carlos Sainz", equipe: "Williams", pontos: 13 },
+    { pos: 16, nome: "Liam Lawson", equipe: "Racing Bulls", pontos: 12 },    
     { pos: 17, nome: "Yuki Tsunoda", equipe: "Red Bull", pontos: 10 },
     { pos: 18, nome: "Oliver Bearman", equipe: "Haas", pontos: 6 },
     { pos: 19, nome: "Gabriel Bortoleto", equipe: "Sauber", pontos: 4 },
@@ -249,16 +249,16 @@ document.getElementById('btn-constructors').addEventListener('click', function (
   content.innerHTML = '<h2 class="titulo-classificacao">Classificação de Construtores 2025 </h2>';
 
   const construtores = [
-    { pos: 1, equipe: "McLaren", pontos: 417 },
-    { pos: 2, equipe: "Ferrari", pontos: 210 },
-    { pos: 3, equipe: "Mercedes", pontos: 209 },
-    { pos: 4, equipe: "Red Bull", pontos: 162 },
-    { pos: 5, equipe: "Williams", pontos: 55 },
-    { pos: 6, equipe: "Racing Bulls", pontos: 36 },
-    { pos: 7, equipe: "Haas", pontos: 29 },
-    { pos: 8, equipe: "Aston Martin", pontos: 28 },
-    { pos: 9, equipe: "Sauber", pontos: 26 },
-    { pos: 10, equipe: "Alpine", pontos: 11 }
+    { pos: 1, equipe: "McLaren", pontos: 460 },
+    { pos: 2, equipe: "Ferrari", pontos: 222 },
+    { pos: 3, equipe: "Mercedes", pontos: 210 },
+    { pos: 4, equipe: "Red Bull", pontos: 172 },
+    { pos: 5, equipe: "Williams", pontos: 59 },
+    { pos: 6, equipe: "Sauber", pontos: 41 },
+    { pos: 7, equipe: "Racing Bulls", pontos: 36 },
+    { pos: 8, equipe: "Aston Martin", pontos: 36 },
+    { pos: 9, equipe: "Haas", pontos: 29 },
+    { pos: 10, equipe: "Alpine", pontos: 19 }
   ];
 
   construtores.forEach(c => {
